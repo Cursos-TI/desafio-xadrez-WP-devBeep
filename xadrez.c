@@ -5,7 +5,7 @@
 int main() {
     
     // declaração das variáveis
-    int torre = 1, bispo = 1, rainha =1;
+    int torre = 1, bispo = 1, rainha =1, cavalo = 1;
     
     // movimentação da torre usando a estrutura de loop while.
     printf("\ntorre 5 casas para a direita\n");
@@ -29,10 +29,25 @@ int main() {
     {
         printf("esquerda\n");
     }
+
+    // movimento do cavalo usando loop aninhado com while e For.
+    printf("\ncavalo 2 para baixo e 1 para esquerda \n");
+    while (cavalo--)
+    {
+        for (int i = 2; i > 0; i--)
+        {
+            printf("baixo \n");
+        }
+        
+        printf("esquerda \n");
+    }
     
     
+
+
+
     
-    
+      
 
     return 0;
 }
